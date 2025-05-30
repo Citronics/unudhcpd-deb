@@ -1,0 +1,6 @@
+builddir
+package/debian/.debhelper
+package/debian/debhelper-build-stamp
+package/debian/unudhcpd*
+package/debian/upstream
+unudhcpd*
