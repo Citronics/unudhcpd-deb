@@ -7,7 +7,7 @@ export BUILDDIR=builddir
 	dh $@ --builddirectory=$(BUILDDIR)
 
 override_dh_auto_configure:
-	meson setup $(BUILDDIR) $(CURDIR)/unudhcpd --cross-file $(CURDIR)/armhf.txt --prefix=/usr
+	meson setup $(BUILDDIR) $(CURDIR)/..//unudhcpd --cross-file $(CURDIR)/armhf.txt --prefix=/usr
 
 override_dh_shlibdeps:
 	dh_shlibdeps -l/usr/arm-linux-gnueabihf/lib
@@ -17,4 +17,3 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	DESTDIR=$(CURDIR)/debian/unudhcpd ninja -C $(BUILDDIR) install
-

@@ -1,7 +1,7 @@
 Source: unudhcpd
 Section: unknown
 Priority: optional
-Maintainer: Marc Lainez <marc@spin42.com>
+Maintainer: Citronics <info@citronics.eu>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -9,7 +9,7 @@ Standards-Version: 4.6.2
 Homepage: https://gitlab.com/postmarketOS/unudhcpd
 
 Package: unudhcpd
-Architecture: any
+Architecture: armhf
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
