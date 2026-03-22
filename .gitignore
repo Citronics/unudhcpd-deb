@@ -1,7 +1,15 @@
 builddir
 package/debian/.debhelper
 package/debian/debhelper-build-stamp
+package/debian/files
 package/debian/unudhcpd*
 package/debian/upstream
 unudhcpd-*
 unudhcpd_*
+*.deb
+*.build
+*.buildinfo
+*.changes
+*.ddeb
+*.dsc
+*.tar.xz
