@@ -9,7 +9,7 @@ Standards-Version: 4.6.2
 Homepage: https://gitlab.com/postmarketOS/unudhcpd
 
 Package: unudhcpd
-Architecture: armhf
+Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
