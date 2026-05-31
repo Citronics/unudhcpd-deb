@@ -7,9 +7,9 @@ VERSION=${TAG#v}
 echo "Building unudhcpd $VERSION..."
 ./build.sh
 
-DEB=$(find . -maxdepth 1 -name "unudhcpd_${VERSION}_armhf.deb" | head -1)
+DEB=$(find . -maxdepth 1 -name "unudhcpd_${VERSION}_*.deb" | head -1)
 if [ -z "$DEB" ]; then
-  echo "ERROR: Expected unudhcpd_${VERSION}_armhf.deb not found"
+  echo "ERROR: Expected unudhcpd_${VERSION}_*.deb not found"
   exit 1
 fi
 
